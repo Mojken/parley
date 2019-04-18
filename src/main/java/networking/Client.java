@@ -29,10 +29,10 @@ public class Client {
         Client client = new Client();
         try {
             client.startConnection("80.217.115.115", 1337);
-            client.send("It works!");
-            client.stopConnection();
+            client.send("Connected");
         } catch (IOException e) {
             e.printStackTrace();
+            client.stopConnection();
         }
     }
 }

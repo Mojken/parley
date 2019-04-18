@@ -28,7 +28,7 @@ public class Client {
     public static void main(String[] args) {
         Client client = new Client();
         try {
-            client.startConnection("130.243.238.223", 1337);
+            client.startConnection("80.217.115.115", 1337);
             client.send("It works!");
             client.stopConnection();
         } catch (IOException e) {
